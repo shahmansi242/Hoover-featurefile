@@ -12,7 +12,7 @@ public class HomePage extends Utils {
     {
         assertURL("demo.nopcommerce");
     }
-     // user hoover
+     // user hoover over
     public void hooverOverCategory(String category){
         WebElement link_category = driver.findElement(By.linkText(category));
         Actions builder = new Actions(driver);
@@ -20,10 +20,12 @@ public class HomePage extends Utils {
         mouseOverCategory.perform();
 
     }
+      // user click on subcategory
     public void clickOnSubcategory(String subcategory){
         clickOnElement(By.linkText(subcategory));
 
     }
+      // user navigate to subcategory page successfully
     public void userNavigateToSubcategoryPageSuccessfully(String subcategory){
         assertURL(subcategory);
 
